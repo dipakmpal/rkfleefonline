@@ -21,16 +21,33 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-    ];
-
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
+        'usertype',
+        'customerCode',
+        'customercode',
+        'contactperson',
+        'contactnumber',
+        'address',
+        'city',
+        'state',
+        'country',
+        'pincode',
+        'gstNumber',
+        'underGroup',
+        'panNumber',
+        'adharNumber',
+        'remark',
+        'monumber',
+        'hirer',
+        'whatsappNumber',
+        'tds',
+        'openingbalance',
+        'openingbalancestatus',
+        'vendorcode',
+        'biltycharges',
+        'creditlimit',
+        'billformate',
+        'transporterparty',
+        'partyType',
     ];
 
     /**
