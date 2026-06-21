@@ -58,6 +58,7 @@ return [
     'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL'),
+    'asset_url' => env('ASSET_URL'),
 
     /*
     |--------------------------------------------------------------------------
@@ -142,6 +143,7 @@ return [
     'maintenance' => [
         'driver' => 'file',
         // 'store' => 'redis',
+        // 'store' => 'redis',
     ],
 
     /*
@@ -155,6 +157,7 @@ return [
     |
     */
 
+    'providers' => ServiceProvider::defaultProviders()->merge([
     'providers' => ServiceProvider::defaultProviders()->merge([
         /*
          * Package Service Providers...
@@ -184,6 +187,9 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        // 'Example' => App\Facades\Example::class,
+
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         // 'Example' => App\Facades\Example::class,
 
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
