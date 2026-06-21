@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -21,6 +20,34 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'usertype',
+        'customerCode',
+        'customercode',
+        'contactperson',
+        'monumber',
+        'address',
+        'city',
+        'state',
+        'country',
+        'pincode',
+        'gstNumber',
+        'underGroup',
+        'panNumber',
+        'adharNumber',
+        'remark',
+        'monumber',
+        'hirer',
+        'whatsappNumber',
+        'tds',
+        'openingbalance',
+        'openingbalancestatus',
+        'vendorcode',
+        'biltycharges',
+        'creditlimit',
+        'billformate',
+        'transporterparty',
+        'partyType',
+        'is_deleted',
     ];
 
     /**
@@ -40,5 +67,7 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'password' => 'hashed',
+        'is_deleted' => 'boolean',
     ];
 }
